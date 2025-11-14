@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* optional small global styles */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+/* dark-mode background handling */
+:root {
+  --bg: #f8fafc;
+  --fg: #0f172a;
+}
+
+.dark {
+  --bg: #0b1220;
+  --fg: #e6eef8;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+}
